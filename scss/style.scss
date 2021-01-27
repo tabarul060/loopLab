@@ -1,0 +1,90 @@
+$bg-color:#222;
+$font-color:#fff;
+$primary-color:#0366D0;
+$icon-size:30px;
+body{
+    background: $bg-color;
+    color: $font-color;
+}
+h1{
+    color:$font-color;
+}
+.navbar{
+    border-bottom: 3px solid $primary-color;
+    background: #292b2c;
+    opacity: 0.7;
+}
+
+#home-section{
+    background: url(../asset/homebg.jpg) no-repeat center top;
+    min-height: 700px;
+    background-attachment: fixed;
+    background-size: cover;
+    .dark-overlay{
+        background: rgba(0,0,0,0.7);
+        min-height: 700px;
+    }
+    .inner-section{
+       padding-top: 170px;
+        padding-bottom: 50px;
+    }
+    .fa{
+        background: $font-color;
+        color: $primary-color;
+        padding: 7px;
+        font-size:$icon-size;
+        border-radius: 11px;
+    }
+}
+#explore-main{
+    .fa{
+        background: $primary-color;
+        color:$font-color;
+        padding: 7px;
+        font-size: $icon-size;
+        border-radius: 10px;
+    }
+}
+
+#create-main{
+     .fa{
+        background: $font-color;
+        color: $primary-color;
+        padding: 7px;
+        font-size:$icon-size;
+        border-radius: 11px;
+    }
+}
+
+#share-main{
+     .fa{
+        background: $primary-color;
+        color: $font-color;
+        padding: 7px;
+        font-size:$icon-size;
+        border-radius: 11px;
+    }
+}
+
+
+
+
+
+
+
+
+@media(max-width:991px){
+    #explore-main h3{
+        margin-top:30px;
+    }
+}
+@media(max-width:768px){
+    #home-section h1{
+        font-size: 34px;
+    }
+}
+@media(max-width:578px){
+   #explore-main p, #create-main p{
+        font-size: 16px;
+    }
+}
